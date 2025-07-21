@@ -4,7 +4,7 @@
       <div class="col-logo">
         <div class="logo-box">
           <img class="logo-img" src="@/assets/roop-polymer-logo.png" alt="Roop Polymers Ltd." />
-          <span class="company-name">ROOP POLYMERS LTD.</span>
+          <span class="company-name">Perfect Plastic LTD.</span>
         </div>
       </div>
       <div class="col-contact">
