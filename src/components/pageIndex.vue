@@ -201,7 +201,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3 col-md-3 col-lg-3">
+          <div class="col-sm-3 col-md-3 col-lg-3" style="margin-bottom: 15rem;">
             <div class="footer-widget">
               <h4>PRODUCTS</h4>
               <div class="footer-links">
@@ -210,7 +210,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3 col-md-3 col-lg-3">
+          <div class="col-sm-3 col-md-3 col-lg-3" style="margin-bottom: 11rem;">
             <div class="footer-info">
               <h4>GET IN TOUCH</h4>
               <div class="contact-info">
@@ -221,7 +221,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3 col-md-3 col-lg-3">
+          <div class="col-sm-3 col-md-3 col-lg-3" style="margin-bottom: 13rem;">
             <div class="footer-contact">
               <h4>STAY CONNECTED</h4>
               <p>We're confident we've provided all the best for you. Stay connected</p>
@@ -366,7 +366,7 @@ export default {
 }
 
 .social-icons {
-  display: flex;
+  display: inline-flex;
   gap: 12px;
 }
 
@@ -858,19 +858,49 @@ html {
   color: #1976d2;
 }
 
-.menu>li>ul.sub-menu {
+.menu > li:hover > ul.sub-menu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 220px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+.menu > li > ul.sub-menu {
   display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu > li > ul.sub-menu > li {
+  width: 100%;
+}
+.menu > li > ul.sub-menu > li > a {
+  display: block;
+  padding: 12px 20px;
+  color: #111;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  background: #fff;
+  transition: background 0.2s, color 0.2s;
+}
+.menu > li > ul.sub-menu > li > a:hover {
+  background: #f2f6f8;
+  color: #0073ba;
 }
 
 .inner-banner {
   background-size: cover;
-  background-position: center right;
+  background-position: center top;
   background-repeat: no-repeat;
-  min-height: 350px;
+  min-height: 300px;
   position: relative;
   display: flex;
   align-items: center;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .inner-banner::before {
